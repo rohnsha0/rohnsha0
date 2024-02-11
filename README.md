@@ -15,7 +15,9 @@ class ReadMe:
         }
 
     def github_stats_badge(self):
-        return f"![GitHub stats](https://github-readme-stats.vercel.app/api?username={self.username}&show_icons=true&theme=radical)"
+        return {
+            'GitHub stats': 'https://github-readme-stats.vercel.app/api?username={self.username}&show_icons=true&theme=radical'
+        }
 
     def doing(self, now=2020):
         today = now
