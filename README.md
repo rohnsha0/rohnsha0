@@ -1,6 +1,8 @@
 ```bash
+import datetime
+
 class ReadMe:
-    def __init__(self, username="rohnsha0"):
+    def __init__(self, username):
         self.username = username
         self.name = 'Rohan Shaw'
         self.education = {
@@ -19,17 +21,17 @@ class ReadMe:
             'GitHub stats': 'https://github-readme-stats.vercel.app/api?username={self.username}&show_icons=true&theme=radical'
         }
 
-    def doing(self, now=2020):
-        today = now
+    def doing(self, year):
+        today = datetime.datetime.now().year
 
-        if now == today:
+        if year == today:
             current_study = self.education['programming']
             return f"""
             Hi there! 👋 I'm {self.name}, a college fresher currently diving into {', '.join(current_study)}.
             Currently studying NLP and Computer-Vision.
             """
 
-        elif now > today:
+        elif year > today:
             current_project = self.employment['projects']['current']
             return f"""
             I'm currently working on {current_project[0]}, a {current_project[1]}.
