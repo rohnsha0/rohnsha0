@@ -18,7 +18,7 @@ class ReadMe:
 
     def github_stats_badge(self):
         return {
-            'GitHub stats': 'https://github-readme-stats.vercel.app/api?username={self.username}&show_icons=true&theme=radical'
+            'GitHub stats': f'https://github-readme-stats.vercel.app/api?username={self.username}&show_icons=true&theme=radical'
         }
 
     def doing(self, year):
