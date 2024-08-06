@@ -1,6 +1,4 @@
 ```bash
-# Rohan Shaw's GitHub Profile
-
 class RohanShaw:
     def __init__(self):
         self.name = "Rohan Shaw"
