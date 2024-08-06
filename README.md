@@ -1,46 +1,52 @@
 ```bash
-import datetime
+# Rohan Shaw's GitHub Profile
 
-class ReadMe:
-    def __init__(self, username):
-        self.username = username
-        self.name = 'Rohan Shaw'
+class RohanShaw:
+    def __init__(self):
+        self.name = "Rohan Shaw"
+        self.role = "Data Science Fresher"
         self.education = {
-            'programming': ['Data Science', 'Machine Learning', 'Deep Learning', 'Android Development', 'Backend']
+            "degree": "B.Tech. in Computer Science & Engineering",
+            "specialization": "Data Science",
+            "institution": "Future Institute of Engineering & Management",
+            "duration": "Sept 2022 - Ongoing"
         }
-        self.employment = {
-            'developer': ['College Fresher', 'Kolkata, India'],
-            'projects': {
-                'current': ['MedBuddy AI', 'Computer-Vision based application for disease detection from medical scans'],
-                'previous': ['StockSense', 'Real-time stock prediction (Completed in Aug 2023)']
+        self.contact = {
+            "email": "rohnsha0@gmail.com",
+            "website": "rohanshaw.me/",
+            "github": "rohnsha0",
+            "linkedin": "rohnsha0",
+            "twitter": "@rohnsha0"
+        }
+        self.skills = [
+            "Python", "TensorFlow", "Keras", "Scikit-Learn",
+            "NumPy", "Pandas", "Matplotlib", "Seaborn", "Plotly",
+            "Android Development"
+        ]
+        self.tech_stack = [
+            "Data Science", "Artificial Intelligence",
+            "TensorFlow", "Python", "FastAPI",
+            "Serverless AWS", "Google Cloud Platform",
+            "Kotlin", "MVVM", "Jetpack Compose",
+            "Android Development"
+        ]
+
+    def projects(self):
+        return [
+            {
+                "name": "StockSense: Analyze & Predict",
+                "description": "One-stop solution for stock predictions using LSTM and Python",
+                "technologies": ["Python", "LSTM", "FastAPI", "AWS Serverless", "Android"],
+                "duration": "May 2023 - July 2023"
+            },
+            {
+                "name": "SwasthAI",
+                "description": "Uses Computer Vision to predict diseases from medical images",
+                "technologies": ["Computer Vision", "NLP", "Android", "GCP Cloud Run", "FastAPI"],
+                "duration": "Oct 2023 - Ongoing"
             }
-        }
+        ]
 
-    def github_stats_badge(self):
-        return {
-            'GitHub stats': f'https://github-readme-stats.vercel.app/api?username={self.username}&show_icons=true&theme=radical'
-        }
-
-    def doing(self, year):
-        today = datetime.datetime.now().year
-
-        if year == today:
-            current_study = self.education['programming']
-            return f"""
-            Hi there! 👋 I'm {self.name}, a college fresher currently diving into {', '.join(current_study)}.
-            Currently studying NLP and Computer-Vision.
-            """
-
-        elif year > today:
-            current_project = self.employment['projects']['current']
-            return f"""
-            I'm currently working on {current_project[0]}, a {current_project[1]}.
-            Looking forward to collaborating on Android Development, Data Science, or Machine Learning projects.
-            """
-
-        else:
-            return """
-            ### Hi there 👋
-            """
-
-me = ReadMe("rohnsha0")
+if __name__ == "__main__":
+    rohan = RohanShaw()
+```
