@@ -41,7 +41,7 @@ class RohanShaw:
                 "name": "SwasthAI",
                 "description": "Uses Computer Vision to predict diseases from medical images",
                 "technologies": ["Computer Vision", "NLP", "Android", "GCP Cloud Run", "FastAPI"],
-                "duration": "Oct 2023 - Ongoing"
+                "duration": "Oct 2023 - Aug 2024"
             }
         ]
 
